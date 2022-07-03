@@ -23,60 +23,48 @@ function App() {
 
       <input type="text" id="task-name" />
 
-      <div className="input-task-status">
+      <br /><br />
 
-        <label for="pendente">
-          <input type="radio" id="pending" name="task-status" value="pendente"/>
-          Pendente</label><br/>
+      <div class="btn-group" data-toggle="buttons" id="input-task-status">
+          <label class="btn btn-primary active">
+            <input type="radio" name="options" id="status-pending" checked value="pendente"/> Pendente
+          </label>
+          <label class="btn btn-primary">
+            <input type="radio" name="options" id="status-in-progress" value="em andamento"/> Em andamento
+          </label>
+          <label class="btn btn-primary">
+            <input type="radio" name="options" id="status-ready"  value="pronto" /> Pronto
+          </label>
+        </div>
 
-        <label for="em andamento">
-          <input type="radio" id="in-progress" name="task-status" value="em andamento"/>
-          Em andamento</label><br/>
-
-        <label for="pronto">
-          <input type="radio" id="ready" name="task-status" value="pronto"/>
-          Pronto</label>
-
-      </div>
+        <br /><br />
 
       <div className="actions-crud">
-        <button id="create-task">Criar tarefa</button>
-        <button id="remove-selected">Remover tarefa selecionada</button>
-        <button id="update-selected">Atualizar tarefa selecionada</button>
+        <button button type="button" class="btn btn-default" id="create-task">Criar tarefa</button>
+        <button button type="button" class="btn btn-default" id="remove-selected">Remover tarefa selecionada</button>
+        <button button type="button" class="btn btn-default" id="update-selected">Atualizar tarefa selecionada</button>
       </div>
 
-      <div className="sort-tasks">
+      <br /><br />
+
         Listar tarefas por: <br/><br/>
 
-        <label for="html">
-        <input
-          type="radio"
-          id="sort-by-name"
-          name="sort-tasks"
-          value="nome"
-        />
-         Nome</label><br/>
+        <div class="btn-group" data-toggle="buttons" id="sort-tasks">
+          <label class="btn btn-primary active">
+            <input type="radio" name="options" id="sort-by-name" checked value="sort-by-name"/> Nome
+          </label>
+          <label class="btn btn-primary">
+            <input type="radio" name="options" id="sort-by-date" value="sort-by-date"/> Data de criação
+          </label>
+          <label class="btn btn-primary">
+            <input type="radio" name="options" id="sort-by-status"  value="sort-by-status" /> Status
+          </label>
+        </div>
 
-        <label for="creation-timestamp">
-        <input
-          type="radio"
-          id="in-progress"
-          name="sort-tasks"
-          value="em andamento"
-        />
-          Data de criação</label><br/>
-        
-        <label for="status">
-        <input
-          type="radio"
-          id="ready" 
-          name="sort-tasks"
-          value="pronto"
-        />
-          Status</label>
-      </div>
+        <br/><br/>
 
       <ol id="task-list"></ol>
+
     </div>
   );
 }
