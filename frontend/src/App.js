@@ -64,6 +64,8 @@ function App() {
 
       <ol id="task-list"></ol>
 
+      <br /><br />
+
     </div>
   );
 }
