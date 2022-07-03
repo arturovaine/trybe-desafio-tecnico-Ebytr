@@ -15,7 +15,7 @@ function App() {
   // };
 
   // useEffect(() => { storeData(); }, []);
-  // array vazio => funcionamento do useEffect é similar ao componentDidMount()
+  // array vazio => funcionamento do useEffect é similar ao componentDidMount() 
 
   return (
     <div className="App">
