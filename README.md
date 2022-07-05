@@ -64,7 +64,7 @@ Project
     │       ├─ folder
     │       └─ folder
     │
-    └─ frontend
+    ├ frontend
     │       ├─ folder
     │       └─ folder
     │
