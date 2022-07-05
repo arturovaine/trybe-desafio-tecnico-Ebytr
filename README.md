@@ -52,21 +52,27 @@ Nosso time irá avaliar a sua entrega olhando, principalmente, para os itens aba
 ```
 Project
 │   README.md
-│   file001.txt    
 │
 ├───assets
-│   ├─ folder    
-│   └─ folder         
+│   ├─ bootstrap    
+│   └─ images         
 │   
 └───app
     │
     ├─ backend  
-    │       ├─ folder
-    │       └─ folder
+    │       ├─ controllers
+    │       ├─ services
+    │       ├─ models
+    │       ├─ migrations
+    │       ├─ middlewares
+    │       ├─ seeders
+    │       └─ tests
     │
     ├─ frontend
-    │       ├─ folder
-    │       └─ folder
+    │       ├─ node_modules
+    │       ├─ public
+    │       ├─ src
+    │       └─ tests
     │
     └─ __tests__  
 
