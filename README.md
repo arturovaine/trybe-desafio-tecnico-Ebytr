@@ -46,3 +46,34 @@ Nosso time irá avaliar a sua entrega olhando, principalmente, para os itens aba
 - Endereço da aplicação no Heroku, se houver (ou outro serviço de deployment);
 - Ter um linter configurado;
 - O projeto deverá ser entregue via repositório pessoal no GitHub (utilize boas práticas de criação/nomeação de branches, além de mensagens de commits bem descritas e commits com um escopo nítido).
+
+
+
+```
+Project
+│   README.md
+│
+├───assets
+│   ├─ bootstrap    
+│   └─ images         
+│   
+└───app
+    │
+    ├─ backend  
+    │       ├─ controllers
+    │       ├─ services
+    │       ├─ models
+    │       ├─ migrations
+    │       ├─ middlewares
+    │       ├─ seeders
+    │       └─ tests
+    │
+    ├─ frontend
+    │       ├─ node_modules
+    │       ├─ public
+    │       ├─ src
+    │       └─ tests
+    │
+    └─ __tests__  
+
+```
